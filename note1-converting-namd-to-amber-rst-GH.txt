@@ -1,0 +1,8 @@
+vmd -dispdev text -python -e convertNAMDtoRST-final-system.py -args -p amber-parmfile.top -c system-from-namd.restart.coor -v system-from-namd.restart.vel -x system-from-namd.xsc -o outfile -s -S "protein"
+
+you must modify convertNAMDtoRST-final-system.py: on line 250, enter the number of atoms in your system
+
+you must use module vmd/1.9 for this conversion to rst to work
+now I must combine this new amber-type .rst file with my amber FF files to
+generate the .cms file
+

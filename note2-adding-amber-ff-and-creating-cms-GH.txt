@@ -1,0 +1,3 @@
+module load desmond/31023-bin
+
+$SCHRODINGER/run -FROM mmshare ~/amber_prm2cms_v.py -p amber-parmfile.top -c output.rst -o system.cms
